@@ -12,8 +12,8 @@ echo "===== Creating Web Directory ====="
 sudo mkdir -p /web
 sudo chmod 755 /web
 echo "===== Creating HTML File ====="
-echo "<html><body><h1>SELinux Practical</h1></body></html>" | 
-sudo tee /web/index.html > /dev/null sudo chmod 644 /web/index.html
+echo "<html><body><h1>SELinux Practical</h1></body></html>" | sudo tee /web/index.html > /dev/null 
+sudo chmod 644 /web/index.html
 
 echo "===== Setting Linux Permissions ====="
 sudo chown -R root:root /web 
